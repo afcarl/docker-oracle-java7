@@ -13,7 +13,7 @@ RUN \
     apt-get -y install locales && \
     sed -i.bak -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
     locale-gen && \
-    update-locale LC_ALL= "en_US.UTF-8" && \
+    update-locale LC_ALL="en_US.UTF-8" && \
     export LANGUAGE=en_US:en && \
     export LANG=en_US.UTF-8 && \
     export LC_ALL=en_US.UTF-8 && \
